@@ -1,0 +1,131 @@
+<!--
+    DOM ->Dom is stands for "Document object model" and it's a tree like representation of the content of a webpage
+    a tree of 'nodes'with different relationship depending on how they arranged in the html file,
+Targeting nodes->When we targettting nodes with element we use different selector property like
+1.getElementById
+2.getElemenByClass
+3.querySelector
+4.querySelectorAll
+5.textContent-access only text of the tag
+
+<h1>today is monday</h1>
+result-today is monday
+
+6.innerHTML-access all text with child text also
+<h1>today is monday<span>gift is good</span></h1>
+result-today is monday gift is good
+
+7.innerHTML-access all the inner html in the tag line
+<h1> today is monday<span>gift is good </span></h1>
+result-<h1>today is monday <span>gift is good </span></h1>
+
+--> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Today we learned DOM</title>
+</head>
+<body style="background-color:skyblue;">
+    <div>
+        <h1 id="title" class="heading">Today we have learned the dom selector properties and types
+            <span style="display:none;">gift is a good college</span></h1>
+        <p>Those who are not present in cricket ground they have penalty of 1k</p>
+    </div>
+
+</body>
+</html>
+
+<!--
+    DOM ->Dom is stands for "Document object model" and it's a tree like representation of the content of a webpage
+    a tree of 'nodes'with different relationship depending on how they arranged in the html file,
+Targeting nodes->When we targettting nodes with element we use different selector property like
+1.getElementById
+2.getElemenByClass
+3.querySelector
+4.querySelectorAll
+5.textContent-access only text of the tag
+
+<h1>today is monday</h1>
+result-today is monday
+
+6.innerHTML-access all text with child text also
+<h1>today is monday<span>gift is good</span></h1>
+result-today is monday gift is good
+
+7.innerHTML-access all the inner html in the tag line
+<h1> today is monday<span>gift is good </span></h1>
+result-<h1>today is monday <span>gift is good </span></h1>
+
+------------------------------
+
+1)document.getElementById('title')
+<h1 id="title" class="heading">Today we have learned the dom selector properties and types</h1>
+2)document.getElementById('title').id
+'title'
+3)document.getElementById('title').class
+undefined
+4)document.getElementById('title').className
+'heading'
+5)document.getElementById('title').getAttribute('class')
+'heading'
+6)document.getElementById('title').setAttribute('class','text')
+undefined
+7)document.getElementById('title').setAttribute('id','gift')
+undefined
+8)document.getElementById('gift').id
+'gift'
+9)const element=document.getElementById('gift')
+undefined
+
+10)element
+<h1 id="gift" class="text">Today we have learned the dom selector properties and types</h1>
+11)element.style.backgroundColor='green'
+'green'
+12)element.style.padding='10px'
+'10px'
+13)element.style.color='red'
+'red'
+14)element.textContent
+'Today we have learned the dom selector properties and types'
+15)element.innerHTML
+'Today we have learned the dom selector properties and types'
+16)element.innerText
+'Today we have learned the dom selector properties and types'
+
+--> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Today we learned DOM</title>
+</head>
+<body style="background-color:skyblue;">
+    <div>
+        <h1 id="title" class="heading">Today we have learned the dom selector properties and types
+            <span style="display:none;">gift is a good college</span></h1>
+        <p>Those who are not present in cricket ground they have penalty of 1k</p>
+    </div>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Today we learned DOM</title>
+</head>
+<body style="background-color:skyblue;">
+    <div>
+        <h1 id="title" class="heading">Today we have learned the dom selector properties and types
+            <span style="display:none;">gift is a good college</span></h1>
+        <p>Those who are not present in cricket ground they have penalty of 1k</p>
+    </div>
+
+</body>
+</html> -->
