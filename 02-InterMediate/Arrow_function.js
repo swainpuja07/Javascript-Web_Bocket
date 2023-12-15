@@ -1,6 +1,7 @@
 // //Arrow function-
 // **In ES6 major update had done.It changes the old syntax of function declaration and tried to reduce the length of a code.
-// **I n arrow function we need a variabkle to declaire it and majorly used => this operator to define arrow function.
+// **In arrow function we need a variabkle to declaire it and majorly used => this operator to define arrow function.
+
 
 function addTwoNumber(num1,num2){
     return num1+num2;
